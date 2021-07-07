@@ -1,0 +1,12 @@
+This exercise is more of an explanation than an exercise when it comes to Interfaces. Because we do not create any
+Interfaces in any of our assignments it's not as important that you fully understand how to create an interface, but
+more what's happening with an interface and how they can help you.
+
+This Item class should look familiar. It's the same one from the Classes and Objects exercises.
+Our Shop has come over as well. As the game designers we've decided to move past the basic Item, and make things a bit
+more complicated. We're going to add some child classes to handle some different types of items.
+In this case we're going to add Food, Potion, Weapon, and Tool (these classes have already been created, but are empty.)
+
+Our Food class will need to increase our characters Health a set amount based on some value assigned to a property
+Our Potion class will increase our characters Mana a set amount based on some value assigned to a property.
+

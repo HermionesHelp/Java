@@ -1,0 +1,48 @@
+** The Solution for this is in another module to make things less confusing as this is a large example **
+
+This exercise is more of an explanation than an exercise when it comes to Interfaces. Because we do not create any
+Interfaces in any of our assignments it's not as important that you fully understand how to create an interface, but
+more what's happening with an interface and how they can help you.
+
+Our Shop class is pretty stripped down. Just enough information to make our iSellable interface usable.
+
+This Item class should look familiar. It's the same one from the Classes and Objects exercises.
+Our Shop has come over as well. As the game designers we've decided to move past the basic Item, and make things a bit
+more complicated. We're going to add some child classes to handle some different types of items.
+In this case we're going to add Food, Potion, Weapon, and Tool (these classes have already been created, but are empty.)
+
+Our Food class will need to increase our characters Health a set amount based on some value assigned to a property
+Our Potion class will increase our characters Mana a set amount based on some value assigned to a property.
+Our Weapon and Tool classes will be able to be destroyed, so they needs some way to keep track if it's usable, and how
+much damage an object has taken.
+
+This code isn't a fully functioning application, like some of the other examples, but you can create a character and a
+shop and play with some of the items and such once your classes are built.
+
+** Why even make interfaces? **
+As you look through the sub classes that we've built you'll see that they implement more than one of those interfaces,
+and if you think about how some of these Items would be used, it makes sense that something like a food item would be
+consumable and would be sellable. So why not add those methods to the Item class? Well, can you eat a weapon? Probably
+a bad idea. If we put the methods needed to "consume" an item inside of the Item class then everything we would make would
+have access to it. Sounds like it could create some cool bugs though.
+
+What about repairable? Should a Food or a Potion take damage as it's used and be repairable? Probably not. I'm sure you
+could override things and make the damage 100% if it's used, but we have to hope that the new member of our team remembers
+to override that when they're asked to implement the SpecialPotion class.
+
+So Interfaces are great for that. We can define inside of these interfaces what methods need to be defined for things
+and make sure they're implemented uniformly.
+
+** Why not just make more classes to inherit from? **
+In Java there's no such thing as multiple inheritance. A Child can inherit from another child class but a child class
+cannot have more than one parent.
+    A         A our parent class, can pass it's "traits" onto class C & D. And class E is inheriting all of the "traits"
+   / \        of A as well, BUT it also gets all the "traits" of C as well
+  C   D
+  |
+  E
+
+  A   B      This would be "Multiple Inheritance", which cannot be done. Class C cannot inherit all the "traits" of both
+   \ /       class A & B. So if we want to do something like this, interfaces are going to be our friend.
+    C
+

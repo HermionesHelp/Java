@@ -6,7 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/Assignment1Prep/Assignment1Prep.iml" filepath="$PROJECT_DIR$/Assignment1Prep/Assignment1Prep.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClassesAndObjects/ClassesAndObjects.iml" filepath="$PROJECT_DIR$/ClassesAndObjects/ClassesAndObjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/HashMap/HashMap.iml" filepath="$PROJECT_DIR$/HashMap/HashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance and Interfaces/Inheritance and Interfaces.iml" filepath="$PROJECT_DIR$/Inheritance and Interfaces/Inheritance and Interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaPracticeExercises.iml" filepath="$PROJECT_DIR$/JavaPracticeExercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Solution Inheritance and Interfaces/Solution Inheritance and Interfaces.iml" filepath="$PROJECT_DIR$/Solution Inheritance and Interfaces/Solution Inheritance and Interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/UnitTesting/UnitTesting.iml" filepath="$PROJECT_DIR$/UnitTesting/UnitTesting.iml" />
     </modules>
   </component>
